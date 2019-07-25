@@ -3,7 +3,7 @@
 * [文档简介](README.md)
 * [Getting Started](getting-started/README.md)
   * [模板管理](getting-started/mo-ban-guan-li/README.md)
-    * [主题\(Theme\)](getting-started/mo-ban-guan-li/zhu-ti-theme.md)
+    * [主题\(Themes\)](getting-started/mo-ban-guan-li/zhu-ti-theme.md)
     * [页面\(Pages\)](getting-started/mo-ban-guan-li/ye-mian-pages.md)
     * [部件\(Partials\)](getting-started/mo-ban-guan-li/bu-jian-partials.md)
     * [布局\(Layouts\)](getting-started/mo-ban-guan-li/bu-ju-layouts.md)
