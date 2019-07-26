@@ -83,12 +83,12 @@ description="example page"
 
 ### 传递参数
 
-```text
+```markup
 {% content "location.htm" city="Vancouver" country="Canada" %}
 <p>Country: {country}, city: {city}.</p>
 ```
 
-```text
+```markup
 {% content "welcome.htm" likes=[
     {name:'Dogs'},
     {name:'Fishing'},
@@ -105,4 +105,22 @@ description="example page"
 {% hint style="warning" %}
 注意内容标签中，使用参数的方法是单大括号，和page,partial,layout的用法不同
 {% endhint %}
+
+## {% component %}
+
+此标签会返回应用在页面组件的html解析后的数据，基本用法为
+
+```text
+{% component "posts" %}
+```
+
+### 参数传递
+
+```text
+{% component "posts" postsPerPage="5" %}
+```
+
+## {% placeholder %}
+
+此标签相当于把模板中的一部分内容的控制权提供了出来，方便每个页面进行个性化编辑。
 
