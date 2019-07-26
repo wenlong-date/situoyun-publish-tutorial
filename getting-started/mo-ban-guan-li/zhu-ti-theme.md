@@ -10,7 +10,7 @@
 | :--- | :--- |
 | 页面 | 每个页面的展示内容的代码。例如网站首页内容的显示布局结构代码，引入其他部件的代码等。 |
 | 部件 | 网站通用性的代码。例如网站通用的导航栏代码，脚部版权，联系方式等介绍代码等。 |
-| 布局 | 网站各类页面通用的html代码。例如定义通用的&lt;html&gt;&lt;head&gt;&lt;meta&gt;&lt;link&gt; &lt;script&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;等代码 |
+| 布局 | 网站各类页面通用的html结构代码。例如定义通用的&lt;html&gt;&lt;head&gt;&lt;meta&gt;&lt;link&gt; &lt;script&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;等代码 |
 | 内容 | 网站通用的内容。支持Text,HTML和Markdown格式的文件编辑和解析。 |
 | 资源 | 保存和编辑网站所需的Images,CSS和JavaScript的文件。 |
 
@@ -56,9 +56,9 @@ assets/          <=== Assets文件夹
 
 要实现创建assets/js/jquery/jquery.min.js结构的文件，可以在资源的页面中创建文件，在文件名的输入框中填写 **js/jquery/jquery.min.js**
 
-{% hint style="warning" %}
-资源类型的文件新建文件支持的后缀名为css, js, less, sass, scss
+### **文件格式支持**
 
-上传的文件格式支持jpg, jpeg, bmp, png, webp, gif, ico, css, js, woff, woff2, svg, ttf, eot, json, md, less, sass, scss, xml
-{% endhint %}
+`pages`、`partials`、`content`和`layouts`目前支持htm后缀格式的文件
+
+`assets`类型的创建文件支持css, js, less, sass, scss后缀格式，上传文件支持jpg, jpeg, bmp, png, webp, gif, ico, css, js, woff, woff2, svg, ttf, eot, json, md, less, sass, scss, xml后缀
 
