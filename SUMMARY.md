@@ -9,5 +9,6 @@
     * [布局\(Layouts\)](getting-started/mo-ban-guan-li/bu-ju-layouts.md)
     * [内容\(Contents\)](getting-started/mo-ban-guan-li/nei-rong-contents.md)
     * [组件\(Components\)](getting-started/mo-ban-guan-li/zu-jian-components.md)
-    * [标签语言\(Tag Languages\)](getting-started/mo-ban-guan-li/biao-qian-yu-yan-tag-languages.md)
+    * [标签语言\(Tag Languages\)](getting-started/mo-ban-guan-li/biao-qian-yu-yan-tag-languages/README.md)
+      * [变量\(Variables\)](getting-started/mo-ban-guan-li/biao-qian-yu-yan-tag-languages/bian-liang-variables.md)
 
