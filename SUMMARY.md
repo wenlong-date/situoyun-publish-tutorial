@@ -11,4 +11,5 @@
     * [组件\(Components\)](getting-started/mo-ban-guan-li/zu-jian-components.md)
     * [标签语言\(Tag Languages\)](getting-started/mo-ban-guan-li/biao-qian-yu-yan-tag-languages/README.md)
       * [变量\(Variables\)](getting-started/mo-ban-guan-li/biao-qian-yu-yan-tag-languages/bian-liang-variables.md)
+      * [标签\(Tags\)](getting-started/mo-ban-guan-li/biao-qian-yu-yan-tag-languages/biao-qian-tags.md)
 
