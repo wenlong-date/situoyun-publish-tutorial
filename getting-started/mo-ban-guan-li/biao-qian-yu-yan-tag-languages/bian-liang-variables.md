@@ -18,6 +18,10 @@
 </ul>
 ```
 
+{% hint style="success" %}
+我们可以通过 `{{ dump(syxwlbt) }}` 来查看这个对象的属性值。
+{% endhint %}
+
 ## this.page
 
 可以使用下面的示例获取相应的变量

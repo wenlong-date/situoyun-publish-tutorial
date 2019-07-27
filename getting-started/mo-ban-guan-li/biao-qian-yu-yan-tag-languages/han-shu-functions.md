@@ -58,3 +58,22 @@
 {{ str_plural('child') }}  // 输出 children
 ```
 
+## html\(\)
+
+### html\_clean\(\)
+
+过滤带html标签的文本，避免XSS攻击
+
+```markup
+{{ html_clean('<script>window.location = "https://www.google.com"</script>') }}
+// 输出 window.location = "https://www.google.com"
+```
+
+## dump\(\)
+
+打印变量的详细数据，比如变量有哪些属性和方法等
+
+```text
+{{ dump(syxwlbt) }}
+```
+
