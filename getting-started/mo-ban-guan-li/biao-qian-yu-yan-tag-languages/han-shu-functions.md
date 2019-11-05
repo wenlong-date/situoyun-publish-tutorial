@@ -69,6 +69,15 @@
 // 输出 window.location = "https://www.google.com"
 ```
 
+### html\_thumb\(url, width, heigth\)
+
+增加图片地址的size参数，方便获取裁剪后的图片地址，url 为图片地址，width和height为需要的图片的宽和高，单位为px。
+
+```text
+// 输出 裁剪的图片地址 https://maple.node2.autops.xyz/media/20191025/967db6cf03c9d98d50e5167df836309959.jpeg?size=100x100
+{{html_thumb('https://maple.node2.autops.xyz/media/20191025/967db6cf03c9d98d50e5167df836309959.jpeg', 100, 100)}}
+```
+
 ## dump\(\)
 
 打印变量的详细数据，比如变量有哪些属性和方法等
