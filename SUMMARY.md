@@ -15,4 +15,6 @@
       * [过滤器\(Filters\)](getting-started/mo-ban-guan-li/biao-qian-yu-yan-tag-languages/guo-lv-qi-filters.md)
       * [函数\(Functions\)](getting-started/mo-ban-guan-li/biao-qian-yu-yan-tag-languages/han-shu-functions.md)
     * [实例解析](getting-started/mo-ban-guan-li/shi-li-jie-xi.md)
+    * [配合思拓云使用](getting-started/mo-ban-guan-li/pei-he-si-tuo-yun-shi-yong.md)
+    * [常见问题](getting-started/mo-ban-guan-li/chang-jian-wen-ti.md)
 
