@@ -28,7 +28,7 @@
 需要在布局的页面中使用 {% page %} 标签，这样当页面应用布局的时候才能正常使用。
 {% endhint %}
 
-所有的布局文件都保存在主题的layouts目录下面，文件后缀为htm，支持二级目录（即支持可以创建文件名为`subdirectory/index.htm`的文件）
+所有的布局文件都保存在主题的layouts目录下面，文件后缀为htm，支持二级目录（即支持layouts/subdirectory/index.htm目录格式）
 
 ## 属性
 

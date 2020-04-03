@@ -86,3 +86,43 @@
 {{ dump(syxwlbt) }}
 ```
 
+## cateDetail\(group\_id\[,page, size, offset\]\)
+
+用来返回内容列表详情数据的函数
+
+| 参数字段 | 是否必需 | 说明 |
+| :--- | :--- | :--- |
+| group\_id | 是 | 内容列表的ID |
+| page | 否 | 分页页数，默认1 |
+| size | 否 | 分页大小，默认10，最大20 |
+| offset | 否 | 数据偏移量，当有此值时，page参数作用无效。 |
+
+```php
+{% set var1 = cateDetail('Q3Dlja12', 1, 5) %}
+{% set var2 = cateDetail('Q3Dlja12', 1, 5, 2) %}
+```
+
+## cateUrl\(group\_id\)
+
+用来返回内容列表的URL
+
+```php
+{{ cateUrl('Q3Dlja12') }}
+```
+
+## postDetail\(post\_id\)
+
+用来返回稿件详情的函数
+
+```php
+{% set detail = postDetail('LgmO6FNq') %}
+```
+
+## themeFileUrl\(filename\)
+
+用来返回模板文件的URL
+
+```php
+{{themeFileUrl('news-index')}}
+```
+

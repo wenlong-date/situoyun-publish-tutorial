@@ -1,5 +1,27 @@
 # 变量\(Variables\)
 
+下面介绍本系统的一些扩展的变量
+
+## 绑定内容数据
+
+在页面、布局和部件中我们都能绑定文件需要的内容数据
+
+例如选择了`首页新闻轮播图[syxwlbt]` 后 就能够使用 `syxwlbt`这个变量带来的数据了，例如
+
+```markup
+<ul>
+    {% for key, list in syxwlbt.posts if key<2 %}
+    <li><a href="{{list.url}}" target="_blank">{{list.title}}</a></li>
+    <li><a href="{{'content'|page({'contentid': list.post_id})}}" target="_blank">{{list.title}}</a></li>
+    
+    {% endfor %}
+</ul>
+```
+
+{% hint style="success" %}
+我们可以通过 `{{ dump(syxwlbt) }}` 来查看这个对象的属性值。
+{% endhint %}
+
 ## this.page
 
 可以使用下面的示例获取相应的变量

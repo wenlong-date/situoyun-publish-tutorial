@@ -324,3 +324,32 @@ function onStart()
 | 非空数组 | true |
 | 对象 | true |
 
+## {% list %}
+
+用来循环显示内容列表稿件的标签
+
+```markup
+<ul>
+    {% list 'cid="Q3Dlja12" offset=4 size=5 keyname="i" name="_item" ' %}
+        <li><a href="{{_item.url}}">{{_item.title}}</a></li>
+    {% endlist %}
+</ul>
+
+<ul>
+    {% list 'cid="Q3Dlja12" page=2 size=5 keyname="i" name="_item" ' %}
+        <li><a href="{{_item.url}}">{{_item.title}}</a></li>
+    {% endlist %}
+</ul>
+```
+
+| 参数 | 描述 |
+| :--- | :--- |
+| cid | 内容列表的ID |
+| page | 分页数 |
+| offset | 数据偏移量，类似数据offset，和page参数只填一个 |
+| size | 分页大小 |
+| keyname | 为`i`即可 |
+| name | 循环变量别名 |
+
+
+

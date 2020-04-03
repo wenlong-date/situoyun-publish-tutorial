@@ -2,18 +2,19 @@
 
 ## 介绍
 
-每个网站都是由很多页面组成的，此功能能新增网站的页面，用来显示单一内容或者嵌套的动态内容。创建的文件都在主题的pages目录下面，文件后缀为htm，支持二级目录（即支持创建文件名为subdirectory/index.htm）
+每个网站都是由很多页面组成的，此功能能新增网站的页面，用来显示单一内容或者嵌套的动态内容。创建的文件都在主题的pages目录下面，文件后缀为htm，支持二级目录（即支持pages/subdirectory/index.htm目录格式）
 
 ## 属性
 
 | 属性名 | 描述 |
 | :--- | :--- |
 | 标题 | 网页标题，可使用在网页的&lt;title&gt;&lt;/title&gt;标签中 |
-| URL | 页面的访问地址 |
+| URL | 网页的域名地址 |
 | 布局 | 当前页面选择的布局文件 |
+| 绑定内容数据 | 当前页面绑定的思拓云内容列表 |
 | 描述 | 当前页面的简单备注描述 |
 | 标记 | 自定义的html标签、文本内容及其他嵌套的内容 |
-| 代码 | 能够对当前页面进行自定义的PHP逻辑代码开发 |
+| 代码 | 能够对当前页面进行自定义的逻辑代码开发 |
 
 ## 注意！！
 
@@ -123,6 +124,174 @@ function onStart()
 ```
 
 上面的`category`变量分别匹配到的值为`life/study`,`life/study/program`
+
+### 绑定内容列表数据的使用
+
+目前我们能在页面的编辑器中填入一些html的标签和内容来实现网站的预览，要加入一些思拓云中定义的网站内容列表的动态数据，我们还需要在页面的**绑定内容数据**选项中选择预定义好的内容列表，例如 `首页新闻轮播图[syxwlbt]`，然后我们就能把`syxwlbt`当成一个承载内容列表数据的变量来使用。目前，数据对象的格式为
+
+```javascript
+{
+    "banners": {
+        "show": true
+    },
+    "posts": [
+        {
+            "post_id": "ADaOXI21",
+            "draft_id": "Q3Dl82D2",
+            "group_id": "QbrYgkJ7",
+            "title": "文稿内容",
+            "author": "思拓云",
+            "publish_at": "1556188547",
+            "original_publish_at": "1556188547",
+            "last_modify_at": "1557287618",
+            "summary": "文稿简介",
+            "source_type": "original",
+            "source_avatar": "https://lorempixel.com/128/128/",
+            "source_desc": "新闻有态度",
+            "is_hot": true,
+            "start_hot_at": "1564045760",
+            "end_hot_at": "1564046060",
+            "is_recomed": true,
+            "start_recomed_at": "1564045940",
+            "end_recomed_at": "1564046420",
+            "comment_count": 6,
+            "dislike_count": 70,
+            "share_count": 68,
+            "share_link": "https://publish.node2.autops.xyz/post/ADaOXI21.html",
+            "pic_num": 3,
+            "location": "cmstop",
+            "duration": 120,
+            "content_type": "video",
+            "content_format": "json",
+            "style": {
+                "model": "0",
+                "desc": "无图"
+            },
+            "click_action": "detail"
+        }
+        {
+            "post_id": "YDBjzIjD",
+            "draft_id": "2V1QdakE",
+            "group_id": "QbrYgkJ7",
+            "title": "武仲良：文能提笔谋强军 武能沙场扬威名",
+            "author": "中国军网",
+            "publish_at": "1554777369",
+            "original_publish_at": "1554777369",
+            "last_modify_at": "1557287617",
+            "source_alias": "中国军网",
+            "source_type": "original",
+            "source_avatar": "https://lorempixel.com/128/128/",
+            "source_desc": "新闻有态度",
+            "is_hot": true,
+            "start_hot_at": "1564045760",
+            "end_hot_at": "1564046060",
+            "is_recomed": true,
+            "start_recomed_at": "1564045940",
+            "end_recomed_at": "1564046420",
+            "comment_count": 33,
+            "dislike_count": 86,
+            "share_count": 17,
+            "share_link": "https://publish.node2.autops.xyz/post/YDBjzIjD.html",
+            "pic_num": 3,
+            "location": "cmstop",
+            "duration": 120,
+            "content_type": "article",
+            "content_format": "html",
+            "style": {
+                "data": [
+                    {
+                        "id": "867",
+                        "thumb": "https://maple.node2.autops.xyz/maple/v1/media/962e81bc804b54ca9dc37be5e89430a4c7"
+                    }
+                ],
+                "model": "1",
+                "desc": "单图"
+            },
+            "click_action": "detail"
+        },
+        {
+            "post_id": "vkvjNumk",
+            "draft_id": "wqkN4Or6",
+            "group_id": "QbrYgkJ7",
+            "title": "着舰第一人戴明盟：白天看航母像树叶，晚上看航母像星星",
+            "author": "中国军网",
+            "publish_at": "1554777367",
+            "original_publish_at": "1554777367",
+            "last_modify_at": "1557287617",
+            "source_alias": "中国军网",
+            "source_type": "original",
+            "source_avatar": "https://lorempixel.com/128/128/",
+            "source_desc": "新闻有态度",
+            "is_hot": true,
+            "start_hot_at": "1564045760",
+            "end_hot_at": "1564046060",
+            "is_recomed": true,
+            "start_recomed_at": "1564045940",
+            "end_recomed_at": "1564046420",
+            "comment_count": 43,
+            "dislike_count": 43,
+            "share_count": 58,
+            "share_link": "https://publish.node2.autops.xyz/post/vkvjNumk.html",
+            "pic_num": 3,
+            "location": "cmstop",
+            "duration": 120,
+            "content_type": "article",
+            "content_format": "html",
+            "style": {
+                "data": [
+                    {
+                        "id": "857",
+                        "thumb": "https://maple.node2.autops.xyz/maple/v1/media/963931aaef5fde632365d76e081a752ae2"
+                    }
+                ],
+                "model": "1",
+                "desc": "单图"
+            },
+            "click_action": "detail"
+        }
+    ],
+    "posts_count": 4,
+    "actions": [
+        "$postID_delete,$postID_update"
+    ],
+    "style": {
+        "desc": "自定义模版",
+        "templete": [
+            "article_1_left",
+            "topic_1_right"
+        ]
+    },
+    "group_info": {
+        "id": "QbrYgkJ7",
+        "name": "首页新闻轮播图",
+        "slug": "syxwlbt",
+        "desc": "syxwlbt",
+        "last_update_at": "1556188417",
+        "created_at": "1554724221",
+        "order": "17",
+        "count": 255,
+        "type": "nav",
+        "content_type": "mix",
+        "module": "index",
+        "channel_id": "Q3Dlb12g"
+    }
+}
+```
+
+**变量使用方法**
+
+```markup
+<ul>
+    {% for key, list in syxwlbt.posts %}
+    <li><a href="{{list.url}}" target="_blank">{{list.title}}</a></li>
+    {% endfor %}
+</ul>
+
+
+{{syxwlbt.banners.show}}
+```
+
+上面我们用syxwlbt.posts就能取到文章的列表，通过循环标签遍历出来，通过syxwlbt.banners.show，我们能获取到banners的显示状态，json中为true，这里实际输出的是1。
 
 ### 注入自定义变量值到页面
 

@@ -39,7 +39,27 @@
 <a href="{{ ''|page }}">Current page</a>
 ```
 
+### 输出带URL参数的页面URL
 
+如果有个url为`/post/:contentid`的名为content.htm的页面文件，如果要使用这个页面来创建连接，可以用下面的方法
+
+```markup
+<a href="{{ 'content'|page({ contentid: 10 }) }}">
+    contentid is 10
+</a>
+
+// 上面结果解析后的数据为
+<a href="https://publish.situoyun.com/post/10">
+    contentid is 10
+</a>
+
+// 配合上数据遍历
+<ul>
+    {% for key, list in syxwlbt.posts %}
+    <li><a href="{{'content'|page({'contentid': list.post_id})}}{{list.url}}" target="_blank">{{list.title}}</a></li>
+    {% endfor %}
+</ul>
+```
 
 ## \|theme
 
