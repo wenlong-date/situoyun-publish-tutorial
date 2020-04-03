@@ -102,44 +102,6 @@
 {% set var2 = cateDetail('Q3Dlja12', 1, 5, 2) %}
 ```
 
-## cateChild\(group\_id\)
-
-获取内容列表下一层的子内容列表信息
-
-数据样例：
-
-```php
-array:2 [▼
-  0 => array:3 [▼
-    "id" => "2Zr5Geke"
-    "name" => "创业加视觉"
-    "slug" => "chuangyejiashijue"
-  ]
-  1 => array:3 [▼
-    "id" => "VnDMd5r4"
-    "name" => "创业子列表"
-    "slug" => "mqrxlv_VnDMd5r4"
-  ]
-]
-```
-
-```php
-{% set childs = cateChild('Q3Dlja12') %}
-{% for child in childs %}
-    {% set tmpgroup = cateDetail(child.id)  %}
-    <p>{{child.name}}</p>
-    <ul>
-        {% for post in tmpgroup.posts  %}
-            <li><a href="{{post.url}}">{{post.title}}</a></li>
-        {% endfor %}
-    </ul>
-    
-    <!-- 传参 -->
-    {% partial "category/hengtu-list-all" postLists=tmpgroup %}
-    
-{% endfor %}
-```
-
 ## cateUrl\(group\_id\)
 
 用来返回内容列表的URL
@@ -163,6 +125,4 @@ array:2 [▼
 ```php
 {{themeFileUrl('news-index')}}
 ```
-
-
 

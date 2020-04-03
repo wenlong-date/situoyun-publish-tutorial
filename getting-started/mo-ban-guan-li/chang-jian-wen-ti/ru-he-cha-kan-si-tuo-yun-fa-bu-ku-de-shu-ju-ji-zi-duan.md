@@ -57,6 +57,27 @@ array:5 [▼
 ]
 ```
 
+### 网站渠道内容列表子列表信息
+
+**预览地址：**`https://publish.domain/test/dv/groups/Q3Dlja12`
+
+当模板中使用了模板函数`cateChild('group_id')`时，返回的数据字段如下
+
+```php
+array:2 [▼
+  0 => array:3 [▼
+    "id" => "2Zr5Geke"
+    "name" => "创业加视觉"
+    "slug" => "chuangyejiashijue"
+  ]
+  1 => array:3 [▼
+    "id" => "VnDMd5r4"
+    "name" => "创业子列表"
+    "slug" => "mqrxlv_VnDMd5r4"
+  ]
+]
+```
+
 ### 网站渠道内容列表详情
 
 **预览地址**：https://publish.domain/test/dv/categories/Q3Dlja12?service=1
