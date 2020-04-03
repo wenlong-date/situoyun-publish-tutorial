@@ -411,7 +411,158 @@ array:11 [▼
 ]
 ```
 
-### APP渠道专题列表详情 todo
+### APP渠道专题列表详情 
+
+**预览地址：**https://publish.domain/test/dv/test/dv/special/MVDWVorj
+
+专题的ID在思拓云发布库的发布管理-&gt;专题管理中可以看到每个专题的详情，其中就能看到其ID
+
+**返回数据：**
+
+```php
+array:2 [▼
+  "home" => array:14 [▼
+    "banners" => array:2 [▶]
+    "newsletters" => array:2 [▶]
+    "tops" => null
+    "posts" => null
+    "posts_count" => 0
+    "count" => 0
+    "actions" => null
+    "title" => "SARS专题"
+    "brief" => "SARS专题2"
+    "style" => array:5 [▼
+      "data" => array:1 [▼
+        0 => array:3 [▼
+          "id" => 129795
+          "thumb" => "https://maple.node2.autops.xyz/media/20200403/9602740e8095f4e680571db92933fc876949.png?size=320x180"
+          "url" => "https://maple.node2.autops.xyz/media/20200403/9602740e8095f4e680571db92933fc876949.png"
+        ]
+      ]
+      "model" => "1+"
+      "desc" => "25:9 大图"
+      "banner" => false
+      "banner_url" => ""
+    ]
+    "share_link" => "https://share.node2.autops.xyz/special/MVDWVorj.html"
+    "groups" => array:3 [▶]
+    "sections" => array:3 [▶]
+    "id" => "MVDWVorj"
+  ]
+  "all" => array:3 [▼
+    "xRkxMp17" => array:12 [▼
+      "banners" => array:2 [▶]
+      "newsletters" => array:2 [▶]
+      "tops" => null
+      "posts" => array:8 [▼
+        0 => array:58 [▼
+          "post_id" => "Q49QbhOB"
+          "draft_id" => "vrGqEQqk"
+          "group_id" => "xRkxMp17"
+          "title" => "总书记关心的百姓身边事丨留学生遍布世界100多个国家和地区 逾八成选择回国发展——中国教育“引进来”“走出去”取得新成效"
+          "sub_title" => ""
+          "author" => "吴蕴聪"
+          "editor" => ""
+          "publish_at" => 1568653199
+          "publish_at_str" => "9月17日"
+          "original_publish_at" => 1568653199
+          "last_modify_at" => 1568652915
+          "brief" => ""
+          "keywords" => "习近平,中国,王超,马可,没有"
+          "summary" => "改革开放四十多年来，中国教育在“引进来”的同时大踏步地“走出去”，通过引进优质教育资源，合作培养高层次人才等举措，包容、借鉴、吸收各种文明的优秀成果，加强人文交流，增进民心相通。"
+          "tags" => ""
+          "emoji" => ""
+          "payload" => ""
+          "emoji_pics" => null
+          "mp_user_id" => ""
+          "is_follow" => false
+          "extra_attrs" => ""
+          "ad_video" => null
+          "category" => ""
+          "source_alias" => "新华社"
+          "source_type" => ""
+          "source_avatar" => ""
+          "source_link" => ""
+          "source_desc" => ""
+          "read_count" => 0
+          "comment_count" => 0
+          "like_count" => 0
+          "is_liked" => false
+          "share_link" => "https://share.node2.autops.xyz/articles/2019-09/17/content_Q49QbhOB.html"
+          "pic_num" => 0
+          "location" => "cmstop"
+          "content_type" => "article"
+          "content_format" => "html"
+          "style" => array:5 [▶]
+          "click_action" => "post_uid"
+          "slip_type" => 0
+          "slip_url" => ""
+          "show_topic_list" => false
+          "content_list" => null
+          "topic" => null
+          "has_video" => false
+          "duration" => 0
+          "duration_str" => "00:00"
+          "orientation" => 1
+          "extra" => null
+          "category_info" => ""
+          "head_title" => ""
+          "live_id" => 0
+          "more_news" => ""
+          "enable_like" => false
+          "url" => "https://m1.node2.autops.xyz/share/content/Q49QbhOB.html"
+          "first_thumb" => "https://shareapp.cyol.com/cmsfile/thumb/1568681694_5840.jpg"
+          "first_thumb_ori" => "https://shareapp.cyol.com/cmsfile/thumb/1568681694_5840.jpg"
+          "extras" => []
+        ]
+        1 => array:58 [▶]
+        2 => array:58 [▶]
+        3 => array:58 [▶]
+        4 => array:58 [▶]
+        5 => array:58 [▶]
+        6 => array:58 [▶]
+        7 => array:58 [▶]
+      ]
+      "posts_count" => 8
+      "count" => 8
+      "actions" => null
+      "style" => array:4 [▶]
+      "sections" => null
+      "brief" => ""
+      "title" => "重点关注"
+      "url" => "https://m1.node2.autops.xyz/share/category/xRkxMp17"
+    ]
+    "j01nglrW" => array:12 [▼
+      "banners" => array:2 [▶]
+      "newsletters" => array:2 [▶]
+      "tops" => null
+      "posts" => array:4 [▶]
+      "posts_count" => 4
+      "count" => 4
+      "actions" => null
+      "style" => array:4 [▶]
+      "sections" => null
+      "brief" => ""
+      "title" => "其他新闻"
+      "url" => "https://m1.node2.autops.xyz/share/category/j01nglrW"
+    ]
+    "wqkNYND6" => array:12 [▼
+      "banners" => array:2 [▶]
+      "newsletters" => array:2 [▶]
+      "tops" => null
+      "posts" => array:5 [▶]
+      "posts_count" => 5
+      "count" => 5
+      "actions" => null
+      "style" => array:4 [▶]
+      "sections" => null
+      "brief" => ""
+      "title" => "疫情下的武汉"
+      "url" => "https://m1.node2.autops.xyz/share/category/wqkNYND6"
+    ]
+  ]
+]
+```
 
 ### 中青号主页数据
 

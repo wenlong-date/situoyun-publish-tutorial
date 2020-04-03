@@ -104,7 +104,24 @@ description: 下面中的各类数据的字段可以参考「如何查看思拓�
 </ul>
 ```
 
-## 显示APP渠道专题的数据 todo 
+## 显示APP渠道专题的数据
+
+### 使用`specials`变量
+
+使用此变量的前提是模板的URL中有`:special`的参数，访问的域名中正确匹配了此参数。例如，模板的URL为`/share/special/:special` [专题的数据预览地址](ru-he-cha-kan-si-tuo-yun-fa-bu-ku-de-shu-ju-ji-zi-duan.md#app-qu-dao-zhuan-ti-lie-biao-xiang-qing)
+
+```markup
+<h1>{{specials.home.title}}</h1>
+{% for group in specials.all %}
+    <h2>{{group.title}}</h2>
+    <ul>
+        {% for post in group.posts %}
+            <li><a href="{{post.url}}">{{post.title}}</a></li>
+        {% endfor  %}
+    </ul>
+    
+{% endfor %}
+```
 
 ## 显示中青号的主页数据
 
