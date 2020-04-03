@@ -88,7 +88,7 @@
 
 ## cateDetail\(group\_id\[,page, size, offset\]\)
 
-用来返回内容列表详情数据的函数
+用来返回[内容列表详情数据](../chang-jian-wen-ti/ru-he-cha-kan-si-tuo-yun-fa-bu-ku-de-shu-ju-ji-zi-duan.md#wang-zhan-qu-dao-nei-rong-lie-biao-xiang-qing)的函数
 
 | 参数字段 | 是否必需 | 说明 |
 | :--- | :--- | :--- |
@@ -112,7 +112,7 @@
 
 ## postDetail\(post\_id\)
 
-用来返回稿件详情的函数
+用来返回[稿件详情](../chang-jian-wen-ti/ru-he-cha-kan-si-tuo-yun-fa-bu-ku-de-shu-ju-ji-zi-duan.md#wang-zhan-qu-dao-gao-jian-xiang-qing)的函数
 
 ```php
 {% set detail = postDetail('LgmO6FNq') %}
@@ -120,7 +120,7 @@
 
 ## themeFileUrl\(filename\)
 
-用来返回模板文件的URL
+用来返回模板文件的URL，当模板文件的URL为`/news/index.html`时，预览模式下返回`/news/index.html`，静态化模式下返回`/index.html`
 
 ```php
 {{themeFileUrl('news-index')}}
