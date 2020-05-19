@@ -289,7 +289,43 @@ array:71 [▼
   "enable_share" => true
   "enable_dislike" => true
   "enable_ad" => true
-  "relations" => []
+  "relations" => array:3 [▼
+    0 => array:15 [▼
+      "post_id" => "DLoEmHgn"
+      "title" => "title"
+      "style" => array:4 [▶]
+      "payload" => null
+      "author" => "z"
+      "source_alias" => "z"
+      "pic_num" => 0
+      "content_type" => "video"
+      "content_format" => "json"
+      "publish_at" => 1589521396
+      "publish_at_str" => "3天前"
+      "url" => "https://domain/post/DLoEmHgn.html"
+      "first_thumb" => ""
+      "first_thumb_ori" => ""
+      "extras" => []
+    ]
+    1 => array:15 [▼
+      "post_id" => "k3VG2T4j"
+      "title" => "title 2"
+      "style" => array:5 [▶]
+      "payload" => null
+      "author" => "wl"
+      "source_alias" => "wl"
+      "pic_num" => 4
+      "content_type" => "image"
+      "content_format" => "json"
+      "publish_at" => 1589521265
+      "publish_at_str" => "3天前"
+      "url" => "https://domain/post/k3VG2T4j.html"
+      "first_thumb" => "https://domain/img/20200515/img_9601518ea4b1dede2b6a3d72aee28d163fcb.png"
+      "first_thumb_ori" => "https://domain/img/20200515/img_9601518ea4b1dede2b6a3d72aee28d163fcb.png"
+      "extras" => []
+    ]
+    ...
+  ]
   "more_news" => []
   "emoji_value" => 0
   "is_collection" => false
