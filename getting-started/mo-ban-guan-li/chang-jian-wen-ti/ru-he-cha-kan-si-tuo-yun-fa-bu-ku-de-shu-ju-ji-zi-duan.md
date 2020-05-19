@@ -228,31 +228,31 @@ array:1 [▼
 **返回数据**：
 
 ```php
-array:71 [▼
-  "post_id" => "LgmO6FNq"
-  "draft_id" => "nDMbelBk"
-  "group_id" => "Q3Dlja12"
-  "title" => "建设新中国最重要的是什么？人才！| 礼赞70年"
+array:75 [▼
+  "post_id" => "km3RQclX"
+  "draft_id" => "V1QZEdrE"
+  "group_id" => "LZkmeZkK"
+  "title" => "title"
   "sub_title" => ""
-  "author" => "唐红"
-  "editor" => "唐红"
-  "publish_at" => 1569354764
-  "publish_at_str" => "9月25日"
-  "original_publish_at" => 1569354764
-  "last_modify_at" => 1569354752
+  "author" => "author1"
+  "editor" => ""
+  "publish_at" => 1589521095
+  "publish_at_str" => "3天前"
+  "original_publish_at" => 1589521095
+  "last_modify_at" => 1589856323
   "brief" => ""
-  "keywords" => "中国,回国,人才,钱学森,新中国"
-  "summary" => "1949年5月的一天，美国麻省理工学院教授钱学森收到香港大学心理学教授、中国科学工作者协会香港分会负责人曹日昌的来信，信中写道：“北方工业主管人久仰您的大名，只因通讯不便，不能写信问候，特命我致意。"
+  "keywords" => "第一篇,文章"
+  "summary" => "z"
   "tags" => ""
-  "emoji" => ""
+  "emoji" => "0"
   "payload" => null
-  "emoji_pics" => null
+  "emoji_pics" => []
   "mp_user_id" => ""
   "is_follow" => false
   "extra_attrs" => ""
   "ad_video" => null
   "category" => ""
-  "source_alias" => "中央纪委国家监委网站"
+  "source_alias" => "wl"
   "source_type" => "reproduce"
   "source_avatar" => ""
   "source_link" => ""
@@ -261,12 +261,24 @@ array:71 [▼
   "comment_count" => 0
   "like_count" => 0
   "is_liked" => false
-  "share_link" => "https://share.node2.autops.xyz/articles/2019-09/25/content_LgmO6FNq.html"
+  "share_link" => "https://domain/articles/2020-05/15/content_km3RQclX.html"
   "pic_num" => 0
   "location" => "cmstop"
   "content_type" => "article"
   "content_format" => "html"
-  "style" => array:5 [▶]
+  "style" => array:5 [▼
+    "data" => array:1 [▼
+      0 => array:3 [▼
+        "id" => 28971
+        "thumb" => "https://domain/img/20200515/img_9601fdf922c14333cf78c50490854122dd65.png"
+        "url" => "https://domain/img/20200515/img_9601fdf922c14333cf78c50490854122dd65.png"
+      ]
+    ]
+    "model" => "1"
+    "desc" => "单图"
+    "banner" => false
+    "banner_url" => ""
+  ]
   "click_action" => ""
   "slip_type" => 0
   "slip_url" => ""
@@ -281,35 +293,22 @@ array:71 [▼
   "category_info" => ""
   "head_title" => ""
   "live_id" => 0
-  "enable_like" => false
-  "templete" => ""
-  "content" => "<p style="text-align: center;"><embed type="application/x-shockwave-flash" class="edui-faked-video" pluginspage="http://www.macromedia.com/go/getflashplayer" sr ▶"
+  "enable_like" => true
+  "duty_editor" => ""
+  "commit_editor" => "流程编辑1"
   "enable_comment" => true
+  "templete" => ""
+  "content" => "<p>改标题了1第一篇文章</p>"
+  "content_ad" => null
   "enable_report" => true
   "enable_share" => true
   "enable_dislike" => true
-  "enable_ad" => true
+  "enable_ad" => false
   "relations" => array:3 [▼
-    0 => array:15 [▼
-      "post_id" => "DLoEmHgn"
-      "title" => "title"
-      "style" => array:4 [▶]
-      "payload" => null
-      "author" => "z"
-      "source_alias" => "z"
-      "pic_num" => 0
-      "content_type" => "video"
-      "content_format" => "json"
-      "publish_at" => 1589521396
-      "publish_at_str" => "3天前"
-      "url" => "https://domain/post/DLoEmHgn.html"
-      "first_thumb" => ""
-      "first_thumb_ori" => ""
-      "extras" => []
-    ]
+    0 => array:15 [▶]
     1 => array:15 [▼
       "post_id" => "k3VG2T4j"
-      "title" => "title 2"
+      "title" => "【栏目修改标题】【从频道列表修改】第一图集"
       "style" => array:5 [▶]
       "payload" => null
       "author" => "wl"
@@ -324,26 +323,24 @@ array:71 [▼
       "first_thumb_ori" => "https://domain/img/20200515/img_9601518ea4b1dede2b6a3d72aee28d163fcb.png"
       "extras" => []
     ]
-    ...
+    2 => array:15 [▶]
   ]
   "more_news" => []
+  "relations_ad" => null
   "emoji_value" => 0
   "is_collection" => false
   "type" => "article"
-  "keywords_f" => array:5 [▼
-    0 => "中国"
-    1 => "回国"
-    2 => "人才"
-    3 => "钱学森"
-    4 => "新中国"
+  "keywords_f" => array:2 [▼
+    0 => "第一篇"
+    1 => "文章"
   ]
-  "group_info" => array:16 [▼
-    "id" => "Q3Dlja12"
-    "name" => "创业"
-    "slug" => "chuangye"
+  "group_info" => array:18 [▼
+    "id" => "LZkmeZkK"
+    "name" => "静态化时机"
+    "slug" => "0mptdi_LZkmeZkK"
     "desc" => ""
-    "last_update_at" => 1583478449
-    "created_at" => 1583478449
+    "last_update_at" => 1589856325
+    "created_at" => 1589514611
     "order" => 0
     "count" => 0
     "type" => "nav"
@@ -354,8 +351,10 @@ array:71 [▼
     "module" => ""
     "channel_id" => ""
     "style" => null
+    "parent_category_list" => null
+    "child_category_list" => null
   ]
-  "zq_search" => "<!--enpproperty <articleid>LgmO6FNq</articleid><date>2019-09-25 03:52:44</date><author>唐红</author><title>建设新中国最重要的是什么？人才！| 礼赞70年</title><keyword>中国,回国,人才,钱学森,新中国</keyword><subtitle></subtitle><introtitle></introtitle><siteid>1</siteid><nodeid>Q3Dlja12</nodeid><nodename>创业</nodename><nodesearchname></nodesearchname><picurl></picurl>/enpproperty--> ◀"
+  "zq_search" => "<!--enpproperty <articleid>km3RQclX</articleid><date>2020-05-15 13:38:15</date><author>author1</author><title>【专题链接标题】从【运营】标题2链接标题更新1第一篇文章静态化</title><keyword>第一篇,文章 ▶"
   "extras" => []
   "comments" => []
   "comments_count" => 0
