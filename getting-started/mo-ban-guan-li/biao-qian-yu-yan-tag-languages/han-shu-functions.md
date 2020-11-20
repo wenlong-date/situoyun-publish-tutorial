@@ -102,6 +102,59 @@
 {% set var2 = cateDetail('Q3Dlja12', 1, 5, 2) %}
 ```
 
+## cateDetailJson\(group\_id\[,page, size, offset\]\)
+
+用来返回[内容列表详情数据](../chang-jian-wen-ti/ru-he-cha-kan-si-tuo-yun-fa-bu-ku-de-shu-ju-ji-zi-duan.md#wang-zhan-qu-dao-nei-rong-lie-biao-xiang-qing) JSON 的函数
+
+| 参数字段 | 是否必需 | 说明 |
+| :--- | :--- | :--- |
+| group\_id | 是 | 内容列表的ID |
+| page | 否 | 分页页数，默认1 |
+| size | 否 | 分页大小，默认10，最大20 |
+| offset | 否 | 数据偏移量，当有此值时，page参数作用无效。 |
+
+```php
+console.log({{cateDetailJson('nq19WyD7')}});
+```
+
+## cateChild\(group\_id\)
+
+获取内容列表下一层的子内容列表信息
+
+数据样例：
+
+```php
+array:2 [▼
+  0 => array:3 [▼
+    "id" => "2Zr5Geke"
+    "name" => "创业加视觉"
+    "slug" => "chuangyejiashijue"
+  ]
+  1 => array:3 [▼
+    "id" => "VnDMd5r4"
+    "name" => "创业子列表"
+    "slug" => "mqrxlv_VnDMd5r4"
+  ]
+]
+```
+
+```php
+{% set childs = cateChild('Q3Dlja12') %}
+{% for child in childs %}
+    {% set tmpgroup = cateDetail(child.id)  %}
+    <p>{{child.name}}</p>
+    <ul>
+        {% for post in tmpgroup.posts  %}
+            <li><a href="{{post.url}}">{{post.title}}</a></li>
+        {% endfor %}
+    </ul>
+    
+    <!-- 传参 -->
+    {% partial "category/hengtu-list-all" postLists=tmpgroup %}
+    
+{% endfor %}
+```
+
 ## cateUrl\(group\_id\)
 
 用来返回内容列表的URL
@@ -118,6 +171,14 @@
 {% set detail = postDetail('LgmO6FNq') %}
 ```
 
+## postDetailJson\(post\_id\)
+
+用来返回[稿件详情](../chang-jian-wen-ti/ru-he-cha-kan-si-tuo-yun-fa-bu-ku-de-shu-ju-ji-zi-duan.md#wang-zhan-qu-dao-gao-jian-xiang-qing) 数据JSON的函数
+
+```php
+console.log({{postDetailJson('aj2pMTox')}});
+```
+
 ## themeFileUrl\(filename\)
 
 用来返回模板文件的URL，当模板文件的URL为`/news/index.html`时，预览模式下返回`/news/index.html`，静态化模式下返回`/index.html`
@@ -125,4 +186,6 @@
 ```php
 {{themeFileUrl('news-index')}}
 ```
+
+
 
